@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 import com.parse.Parse;
+import com.parse.ParseObject;
 
 
 public class MyActivity extends Activity {
@@ -46,4 +48,12 @@ public class MyActivity extends Activity {
         intent.setAction("com.example.patrick.CUSTOM_INTENT");
         sendBroadcast(intent);
     }
+
+    public void GoToParse(View view)
+    {
+        Intent intent = new Intent(this, ParseExample.class);
+        startActivity(intent);
+    }
+
+
 }

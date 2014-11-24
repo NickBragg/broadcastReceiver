@@ -6,24 +6,22 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MyActivity">
+    tools:context="com.example.patrick.helloworld.ParseExample$PlaceholderFragment">
 
     <TextView
-        android:text="@string/hello_world"
+        android:text="Person Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
+    <EditText
+        android:id="@+id/editTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editTextPersonAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <Button
-        android:id="@+id/buttonBroadcast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Broadcast Intent"
-        android:onClick="broadcastIntent"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Go To Parse Activity"
-        android:onClick="GoToParse"
-        android:layout_below="@id/buttonBroadcast"/>
-
+        android:onClick="PushToParse"/>
 </RelativeLayout>
