@@ -16,7 +16,7 @@ public class MyActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Parse.initialize(this, "APPLICATION ID", "CLIENT KEY");
+        Parse.initialize(this, "FJOxMK1gTS8R3eGuSZ9c4caLMnrdZAsfQgjRYt8A", "lXkuXxJZU7GrdAz6fbkqBticz4wvzt1LFQqmJHd7");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
