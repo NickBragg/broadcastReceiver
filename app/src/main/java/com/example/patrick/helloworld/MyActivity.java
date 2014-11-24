@@ -7,11 +7,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.parse.Parse;
+
 
 public class MyActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Parse.initialize(this, "APPLICATION ID", "CLIENT KEY");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
     }
@@ -40,6 +44,6 @@ public class MyActivity extends Activity {
     {
         Intent intent = new Intent();
         intent.setAction("com.example.patrick.CUSTOM_INTENT");
-        sendBroadcast(intent );
+        sendBroadcast(intent);
     }
 }
