@@ -9,20 +9,23 @@
     tools:context="com.example.patrick.helloworld.ParseExample$PlaceholderFragment">
 
     <TextView
-        android:id="@id/textviewLabel"
+        android:id="@+id/textviewLabel"
         android:text="Person Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <EditText
+
         android:layout_below="@+id/textviewLabel"
         android:id="@+id/editTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <EditText
+        android:layout_below="@+id/editTextPersonName"
         android:id="@+id/editTextPersonAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Button
+        android:layout_below="@+id/editTextPersonAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="PushToParse"/>

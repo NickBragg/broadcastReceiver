@@ -16,10 +16,15 @@ public class MyActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Parse.initialize(this, "FJOxMK1gTS8R3eGuSZ9c4caLMnrdZAsfQgjRYt8A", "lXkuXxJZU7GrdAz6fbkqBticz4wvzt1LFQqmJHd7");
+
+        Parse.initialize(this,"FJOxMK1gTS8R3eGuSZ9c4caLMnrdZAsfQgjRYt8A","lXkuXxJZU7GrdAz6fbkqBticz4wvzt1LFQqmJHd7");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
+
+        ParseObject testObject = new ParseObject("test");
+        testObject.put("foo", "bar");
+        testObject.saveInBackground();
     }
 
 

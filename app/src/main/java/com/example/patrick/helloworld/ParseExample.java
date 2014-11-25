@@ -55,8 +55,8 @@ public class ParseExample extends Activity {
 
 
         ParseObject person = new ParseObject("Person");
-        person.put("name", editTextName.getText().toString() );
-        person.put("age", editTextAge.getText().toString());
+        person.put("name", "nick" );
+        person.put("age", "21");
         person.saveInBackground();
     }
 
